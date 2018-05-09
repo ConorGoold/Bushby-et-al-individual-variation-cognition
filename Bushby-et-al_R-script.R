@@ -118,14 +118,14 @@ r_cor_s1si <- 0.1
 r_cor_s2si <- -0.1
 
 set.seed(1234)
-d <- generate_mm_data(N_j = N_j, N_trials = N_trials, N_cond = N_cond,  
-                      alpha = alpha, beta_trial = beta_trial, 
-                      beta_cond = beta_cond, beta_tc = beta_tc, gamma = gamma,
-                      sigma_nu_1 = sigma_nu_1, sigma_nu_2 = sigma_nu_2, 
-                      sigma_nu_3 = sigma_nu_3, sigma_nu_4 = sigma_nu_4, 
-                      r_cor_is1 = r_cor_is1, r_cor_is2 = r_cor_is2, r_cor_isi = r_cor_isi,
-                      r_cor_s1s2 = r_cor_s1s2, r_cor_s1si = r_cor_s1si, r_cor_s2si = r_cor_s2si
-                      )
+d <- generate_data(N_j = N_j, N_trials = N_trials, N_cond = N_cond,  
+                   alpha = alpha, beta_trial = beta_trial, 
+                   beta_cond = beta_cond, beta_tc = beta_tc, gamma = gamma,
+                   sigma_nu_1 = sigma_nu_1, sigma_nu_2 = sigma_nu_2, 
+                   sigma_nu_3 = sigma_nu_3, sigma_nu_4 = sigma_nu_4, 
+                   r_cor_is1 = r_cor_is1, r_cor_is2 = r_cor_is2, r_cor_isi = r_cor_isi,
+                   r_cor_s1s2 = r_cor_s1s2, r_cor_s1si = r_cor_s1si, r_cor_s2si = r_cor_s2si
+                  )
 
 #------------------------------------------------------------------------------------------------------
 # fit the model in Stan. The model code file should be saved and accessible in the working directory
